@@ -1,0 +1,219 @@
+/* container */
+.app__container{
+    background-color: #f5f5f5;
+    
+}
+
+.app__content{
+    padding-top: 30px;
+}
+.category{
+    
+    background-color: #3c4746;
+    border-radius: 2px;
+}
+
+.category__heading{
+    font-size: 1.6rem;
+    color: var(--text-color);
+    padding: 12px 16px;
+    margin-top: 0;
+    border-bottom: 1px solid rgba(0 ,0 ,0 ,0.05);
+
+}
+
+.category__heading-icon{
+    font-size: 1.4rem;
+    margin-right: 10px;
+}
+
+.category-list{
+    padding: 0  0 10px 0;
+    list-style: none;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-bottom: 1px solid rgba(0 ,0 ,0 ,0.1);
+}
+.category-list:last-child{
+    border-bottom: none;
+}
+
+.category-item-color{
+    font-weight: 600;
+    color: black;
+}
+
+.category-item--active .category-item__link {
+    color: var(--primary-color);
+}
+.category-item--active .category-item__link::before{
+    content: "";
+    position: absolute;
+    border: 5px solid;
+    left: 6px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-color: transparent transparent transparent var(--primary-color);
+}
+.category-item__link{
+    position: relative;
+    right: 0;
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 1.6rem;
+    padding: 6px 16px;
+    display: block; 
+    transition: right linear 0.1s;
+}
+
+.category-item__link:hover{
+    right: -4px;
+    color: var(--primary-color);
+}
+
+/*home filter */
+.home-filter{
+    background-color: rgb(156, 156, 156);
+    display: flex;
+    align-items: center;
+    padding: 12px 10px;
+    border-radius: 2px;
+
+}
+.home-filter-text{
+    font-size: 1.4rem;
+    color: rgb(44, 44, 44);
+    font-weight: 600;
+}
+.home-poduct{
+    margin: 5px 0 10px 0;
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    padding: 10px 0;
+    max-height: 50vh;
+    overflow-y: auto;
+
+}
+.home-poduct--list{
+    background-color: #3c4746;
+}
+.home-poduct__item{
+    margin: 10px 0;
+    color: #ffffff;
+    float: left;
+    font-size: 1.4rem;
+    display: block;
+    align-items: center;
+    text-align: center;
+    padding: 10px 0;
+   
+}
+.home-poduct__item:last-child{
+    border-right: none ;
+}
+.home-poduct__link{
+    margin: 10px 0;
+    color: #000000;
+    float: left;
+    font-size: 1.4rem;
+    display: block;
+    align-items: center;
+    text-align: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #3c4746;
+}
+.home-poduct__link a{
+    color: #f32b2b;
+    cursor: pointer;
+}
+.home-btn{
+    border-radius: 5px;
+    border: none;
+    height: 40px;
+    padding: 8px 16px;
+    float: right;
+    margin-right: 50px;
+    margin-bottom: 20px;
+    
+    background-color: #f32b2b;
+}
+
+/* import cơ sở */
+.home-basis__item{
+    margin: 10px 0;
+    color: #ffffff;
+    float: left;
+    font-size: 1.4rem;
+    display: block;
+    align-items: center;
+    text-align: center;
+    padding: 10px 0;
+    min-height: 40vh;
+}
+
+.basis__heading{
+    font-size: 2rem;
+    display: block;
+    padding: 10px 0;
+}
+
+.basis__name{
+    align-items: center;
+    text-align: center;
+    display: flex;
+    padding: 16px 0;
+    justify-content: center;
+}
+
+.basis__name-text{
+    font-size: 2rem;
+    display: block;
+    padding: 0 10px;
+    margin-left: -44px;
+}
+
+.basis__name-input{
+    height: 35px;
+    min-width: 300px;
+    border-radius: 4px;
+    padding: 8px 16px;
+}
+
+.basis__upload{
+    padding: 20px 0;
+}
+
+.basis__upload-list{
+    display: inline-block;
+    height: 32px;
+    border-radius: 3px;
+    min-width: 150px;
+    margin-right: 10px;
+}
+
+.basis__upload-item{
+    display: block;
+    font-size: 1.5rem;
+
+}
+
+.basis__upload-input{
+    height: 35px;
+    min-width: 300px;
+    border-radius: 4px;
+    padding: 8px 16px;
+}
+.basis__upload-btn{
+    display: inline-block;
+    height: 25px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    min-width: 90px;
+    background-color: #9ef393;
+    text-align: center;
+    align-items: center;
+    border-radius: 20px;
+    padding-top: 4px;
+    color: #f32b2b;
+}

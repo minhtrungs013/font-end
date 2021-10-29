@@ -1,0 +1,255 @@
+
+/* header navbar */
+.header{
+    height: 54px;
+    background-color: #fff;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    box-shadow: 0 2px 5px 0 rgb(207, 207, 207);
+}
+
+.header__navbar{
+    height: 54px;
+    padding: 8px 16px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__navbar-list{
+    display: flex;
+}
+
+.header__navbar-item{
+    list-style: none;
+    align-items: center;
+    display: flex;
+}
+
+.header__navbar-link{
+    text-decoration: none;
+    font-size: 1.5rem;
+    padding: 8px 16px;
+    width: 100%;
+    display: block;
+    line-height: 1.5;
+    color: var(--text-color);
+}
+
+.header__navbar-link:hover{
+    background-color: #ccc;
+}
+/* slider */
+.slider{
+    margin-top: 54px;
+    padding-top: 50%;
+    position: relative;
+    background:  url('../img/architect\ \(1\).jpg') top center / cover no-repeat;
+}
+    /* giup chu len giua anh */
+.slider__text{
+    margin-top: 16px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.slider__text-heading{
+    font-size: 4rem;
+    color: #f1f1f1;
+    margin: 10px 0;
+}
+
+.slider__text-heading-br{
+    background-color: #000;
+    text-align: center;
+    padding: 15px 10px 15px 16px;
+    opacity: 0.7;
+ 
+}
+
+.slider__text-heading-grey{
+    font-weight: 200;
+    margin: 0 16px;
+}
+/* projects */
+.Projects__list{
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+    padding: 0 8px;
+}
+
+.Projects__item{
+    list-style: none;
+    float: left;
+    width: 25%;
+    padding: 0 8px;
+    margin-bottom: 16px;
+    
+}
+
+.Projects__form{
+    width: 100%;
+}
+
+.Projects__form-title{
+    position: absolute;
+    font-size: 1.5rem;
+    padding: 8px 16px;
+    background-color: black;
+    color: #fff;
+    line-height: 25px;
+}
+
+.Projects__form-img{
+    width: 100%;
+    display: block;
+    cursor: pointer;
+}
+
+/* about */
+.container__heading-desription{
+    font-size: 1.5rem;
+    margin: 15px 0;
+}
+
+.About__list{
+    overflow: hidden;
+    width: 100%;
+    padding: 0 8px;
+}
+
+.About__item{
+    list-style: none;
+    float: left;
+    width: 25%;
+    padding: 0 8px;
+    margin-bottom: 16px;
+}
+
+.About__form{
+    width: 100%;
+}
+
+.About__form-img{
+    width: 100%;
+    display: block;
+
+}
+
+.About__form-info{
+
+}
+
+.About__form-info-heading{
+    margin: 10px 0;
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 36px;
+}
+
+.About__form-info-position{
+    margin: 15px 0;
+    line-height: 22px;
+    font-size: 1.5rem;
+    color: rgb(133, 131, 131);
+}
+
+.About__form-info-desription{
+    margin: 15px 0;
+    font-size: 1.5rem;
+    line-height: 23px;
+}
+
+.About__form-info-btn{
+    width: 100%;
+    height: 40px;
+    padding: 8px 16px;
+    border-style: none;
+    font-size: 1.5rem;
+}
+.About__form-info-btn:hover{
+    background-color: #ccc;
+}
+/* contact */
+.Contact-list{
+    width: 100%;
+    
+}
+
+.Contact-item{
+    list-style: none;
+    margin: 16px 0;
+    border-radius: 2px;
+}
+
+.Contact-input{
+    width: 100%;
+    padding: 8px;
+    font-size: 1.4rem;
+    height: 40px;
+}
+.Contact-btn{
+    margin: 16px 0;
+    padding: 8px 16px;
+    border-style: none;
+    background-color: black;
+    color: #FFF;
+    cursor: pointer;
+    font-size: 1.5rem;
+    line-height: 22px;
+}
+/* map */
+.map__img{
+    width: 100%;
+    padding: 0 16px;
+}
+/* footer */
+.footer{
+    background-color: black;
+    padding: 20px 0;
+}
+
+.footer__bottom{
+    margin: 15px;
+    font-size: 1.5rem;
+    text-align: center;
+    color: #fff;
+}
+.footer__bottom a{
+    color: #009688;
+}
+@media(max-width: 63.9375em ){
+    .Projects__item {
+        width: 50%;
+    }
+    .About__item {
+        width: 50%;
+    }
+}
+@media(max-width: 46.1875em ){
+    .Projects__item {
+        width: 100%;
+    }
+    .About__item {
+        width: 100%;
+    }
+    .header__navbar-list-mobile{
+        display: none;
+    }
+    .header__navbar{
+        width: 100%;
+        justify-content: center;
+    }
+    .header__navbar-list{
+       text-align: center;
+    }
+}
+
+
+

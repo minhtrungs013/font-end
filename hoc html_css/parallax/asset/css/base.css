@@ -1,0 +1,52 @@
+root{
+    --hover-color: rgb(209, 206, 206);
+    --text-color:   #000;
+    --white-color: #fff;
+
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: 'Roboto',Verdana,sans-serif;
+    box-sizing: inherit;
+
+}
+.grid{
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    
+}
+/* container */
+
+.container-content{
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    padding: 64px 16px;
+    overflow: hidden;
+}
+.container-content__heading{
+    margin: 10px 0;
+    text-align: center;
+    font-size: 2rem;
+    color: #777;
+    line-height: 1.8;
+    font-weight: 400;
+}
+
+.container-content__desrition{
+    margin: 15px 0;
+    font-size: 1.1rem;
+    color: #777;
+    text-align: center;
+    line-height: 27px;
+    font-style: italic;
+}

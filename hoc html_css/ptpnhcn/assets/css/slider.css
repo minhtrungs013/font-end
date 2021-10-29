@@ -1,0 +1,17 @@
+
+/* slider */
+.slider{
+
+    width: 100%;
+    min-height: 200px ;
+    position: relative;
+    background: url('../img/logo-dai-hoi.jpg')  center center / cover no-repeat ;
+}
+
+.slider__heading{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+
+}

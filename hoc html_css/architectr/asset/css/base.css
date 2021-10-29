@@ -1,0 +1,50 @@
+root{
+    --hover-color: rgb(209, 206, 206);
+    --text-color:   #000;
+    --white-color: #fff;
+
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+    line-height: 1.6rem;
+     font-family: 'Roboto',Verdana,sans-serif;
+    box-sizing: inherit;
+
+}
+.grid{
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    
+}
+/* container */
+.container{
+    max-width: 1468px;
+    padding: 8px 16px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.container__heding{
+    padding: 32px 16px;
+    width: 100%;
+    font-size: 2rem;
+    line-height: 22px;
+}
+
+.container__heding-text{
+    margin: 10px 0;
+    padding: 16px 0;
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 400;
+    border-bottom: 1px solid #ccc;
+}

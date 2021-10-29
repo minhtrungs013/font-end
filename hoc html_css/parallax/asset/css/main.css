@@ -1,0 +1,438 @@
+/* navbar */
+.header{
+    width: 100%;
+    height: 42px;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    background-color: transparent;
+}
+
+.header__navbar{
+    display: flex;
+    height: 42px;
+    justify-content: space-between;
+}
+
+.header__navbar-list{
+    display: flex;
+}
+
+.header__navbar-item{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    
+   
+}
+
+.header__navbar-link{
+    text-decoration: none;
+    font-size: 1.2rem;
+    display: block;
+    padding: 13px 16px;
+    font-weight: 200; 
+    color: rgb(104, 104, 104);
+}
+.header__navbar-link:hover{
+   background-color: rgb(194, 194, 194);
+   color: rgb(22, 22, 22);
+}
+
+.header__saerch{
+    display: flex;
+    align-items: center;
+}
+
+.header__search-btn{
+    cursor: pointer;
+    outline: none;
+    border: none; 
+    background-color: transparent;  
+}
+
+.header__search-btn-icon{
+    padding: 16px 16px;
+    display: inline-block;
+    color: rgb(104, 104, 104);
+    font-size: 1.2rem ;
+    height: 42px;
+}
+
+.header__search-btn-icon:hover {
+    background-color: coral;
+    color: #fff;
+}
+
+/* slider */
+.slider{
+    opacity: 0.75;
+    width: 100%;
+    min-height: 400px ;
+    position: relative;
+    background: url('../img/parallax1.jpg')  center center / cover no-repeat ;
+}
+
+.slider__heading{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+
+}
+
+.slider__text{
+    color: #ccc;
+    padding: 12px 24px;
+    font-size: 2rem;
+    background: black;
+    letter-spacing: 10px;
+   
+  
+}
+/* container */
+.about-section__text{
+    margin: 15px 0;
+    color: #777777;
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+.about-section__list{
+    width: 100%;
+    display: inline-flex;
+}
+
+.about-section__item{
+    float: left;
+    width: 50%;
+    padding: 12px 24px;
+    text-align: center;
+
+}
+
+.about-section__item-text{
+    margin: 15px 0;
+    color: #777;
+    font-size: 1.1rem;
+}
+
+.about-section__item-img{
+    display: block;
+    border-radius: 4px;
+    width: 100%;
+    opacity: 0.75;
+}
+
+.about-section__item--rigth{
+    text-align: left;
+    line-height: 1.6;
+}
+
+.about-large{
+    margin: 18px 0;
+    padding: 16px 0;
+    font-size: 1.2rem;
+    color: #777;
+    text-align: center;
+}
+
+.about-large__list{
+
+}
+
+.about-large__item{
+    list-style: none;
+    font-size: 1.2rem;
+}
+
+.about-large__item-text{
+    margin: 15px 0;
+    letter-spacing: 6px;
+    color: #777;
+    font-weight: 400;
+}
+
+.about-large__item-percent{
+    background-color: #f1f1f1;
+}
+
+.about-large__item-percents{
+    padding: 4px 8px;
+    width: 90%;
+    background-color: #616161;
+    color: #fff;
+    text-align: center;
+}
+/* grey */
+.container-grey{
+    background: #616161;
+    width: 100%;
+    overflow: hidden;
+    padding: 16px 0;
+}
+
+.container-grey__quarter{
+    float: left;
+    width: 25%;
+    margin: 16px 0;
+    text-align: center;
+    color: #fff;
+    font-size: 1rem;
+    line-height: 20px;
+}
+
+.container-grey__quarter-xlarge{
+    font-size: 2rem;
+    margin: 16px 0;
+    line-height: 20px;
+}
+/* Portfolio-slider */
+.Portfolio-slider{
+    opacity: 0.75;
+    width: 100%;
+    display: block;
+    min-height: 400px ;
+    position: relative;
+    background: url('../img/parallax2.jpg')  center center / cover no-repeat ;
+}
+
+.Portfolio-slider__heading{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+
+}
+
+.Portfolio-slider__text{
+    opacity: 1;
+    color: #FFF;
+    padding: 12px 24px;
+    font-size: 3rem;
+    letter-spacing: 10px;
+}
+
+.Portfolio__list{
+    width: 100%;
+    display: inline-flex;
+    overflow: hidden;
+    margin: 6px 0;
+   
+}
+
+.Portfolio__item{
+    list-style: none;
+    float: left;
+    width: 25%;
+    padding: 0 6px;
+    
+}
+
+.Portfolio__item-img{
+    display: block;
+    width: 100%;
+ 
+}
+
+.Portfolio__item-img:hover{
+    opacity: 0.75;
+    cursor: pointer;
+}
+
+.Portfolio-btn{
+    display: flex;
+    justify-content: center;
+}
+
+.Portfolio-btn__btn{
+    cursor: pointer;
+    margin-top: 34px;
+    padding: 12px 24px;
+    height: 42px;
+    border-style: none;
+    font-size: 1.5rem;
+    background: #ececec;
+    border-radius: 2px;
+    
+}
+
+.Portfolio-btn__btn:hover{
+    background: #7777;
+}
+/* contac */
+
+.contact-slider{
+    opacity: 0.75;
+    width: 100%;
+    display: block;
+    min-height: 400px ;
+    position: relative;
+    background: url('../img/parallax3.jpg')  center center / cover no-repeat ;
+}
+
+.contact-slider__heading{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+
+}
+
+.contact-slider__text{
+    opacity: 1;
+    color: #FFF;
+    padding: 12px 24px;
+    font-size: 3rem;
+    letter-spacing: 10px;
+}
+
+.contact-section{
+    display: flex;
+    float: left;
+    margin: 16px 0;
+    padding: 32px 0;
+}
+
+.contact-section__cln-img{
+    width: 100%;
+    display: block;
+    border-radius: 4px;
+
+}
+
+.contact-section__cln{
+    width: 33.33333%;
+    padding: 0 16px ;
+}
+
+.contact-section__cln--width{
+    width: 66.66666%;
+    margin: 16px 0;
+    padding: 0 16px;
+}
+
+.contact-section__address{
+    margin-bottom: 16px 0;
+}
+
+.contact-section__address-item{
+    padding: 5px 0;
+    font-size: 1.2rem;
+    color: #777;
+    
+}
+
+.contact-section__address-item i{
+    width: 15px;
+}
+
+.contact-section__Swing{
+    color: #777;
+    font-size: 1rem;
+}
+
+.contact-section__form{
+}
+
+.contact-section__action{
+    width: 100%;
+    overflow: hidden;
+    margin: 5px 0;
+}
+
+.contact-section__action-border{
+    float: left;
+    width: 50%;
+}
+
+.contact-section__action-border:first-child{
+    padding-right: 5px;
+}
+
+.contact-section__action-border:last-child{
+    padding-left: 5px;
+}
+
+.contact-section__action-input{
+    border: 1px solid #ccc;
+    padding: 8px;
+    width: 100%;
+}
+
+.contact-section__action-borders{
+    margin-bottom: 5px;
+}
+
+.contact-section__action-link{
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #ccc;
+}   
+
+.contact-section__btn{
+    border-radius: 2px;
+    color: #fff;
+    background: #000000;
+    border: none;
+    height: 30px;
+    padding: 8px 16px;
+    float: right;
+}
+
+.contact-section__btn:hover{
+    background: rgb(214, 213, 213);
+    color: black;
+}
+/* footer */
+.footer{
+    height: 200px;
+    background-color: black;
+    padding: 20px 0;
+    opacity: 0.75;
+}
+
+.footer:hover{
+    opacity: 1;
+}
+
+.footer__btn{
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.footer__btn-btn{
+    background-color: rgb(255, 255, 255);
+    color: black;
+    height: 35px;
+    border: none;
+    font-weight: 500;
+    font-size: 1.2rem;
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 2px;
+    text-decoration: none;
+    list-style: none;
+    text-align: center;
+}
+
+.footer__btn-btn:hover{
+    background: #ccc;
+}
+
+.footer__bottom{
+    margin: 15px;
+    font-size: 1.5rem;
+    text-align: center;
+    color: #fff;
+}
+.footer__bottom a{
+    color: #009688;
+}
+.footer__bottom a:hover{
+    color: #009614;
+}
+

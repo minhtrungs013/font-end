@@ -1,0 +1,128 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+* {
+  font-size: 62.5%;
+  text-decoration: none;
+  list-style: none;
+}
+.flow__input-prev,
+.flow__input-next {
+   display:none;
+}
+.grid__flow {
+    position: relative;
+    width: 100rem;
+  height: 25rem;
+  background-color:aqua;
+  display: grid;
+grid-template-columns: 8rem 84rem 8rem;
+grid-template-areas: 
+"prev container next"
+;
+}
+.prev__button,
+.next__button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    cursor: pointer;
+    text-align: center;
+    font-size: 2.4rem;
+    background:red;
+    width: 5rem;
+    height: 5rem;
+}
+.next__button {
+    grid-area: next;
+   
+}
+.prev__button {
+    grid-area: prev;
+}
+.flow__container {
+    position: absolute;
+    top: 50%;
+    left: 50.3%;
+    transform: translate(-50%,-50%);
+    display: grid;
+    grid-auto-flow: column;
+    grid-gap: 1rem;
+    width: 84rem;
+    height: 20rem;
+    grid-auto-flow: column
+    grid-auto-column 25%;
+    overflow:auto;
+    grid-area: container;
+    
+}
+.flow__container {
+-ms-overflow-style: none;
+scrollbar-width: none;
+}
+.flow__container::-webkit-scrollbar {
+ display: none;
+}
+.flow__container .flow__img {
+  width: 20rem;
+  height: 20rem;
+  transform: translateX(0%);
+  transition: 0.45s linear;
+
+}
+.flow__input-next:checked ~ .flow__container > .flow__img {
+    transform: translateX(-420%);
+}
+
+
+/* hieuj ứng chạy */
+.wrappper {
+  height : 100vh;
+  display : flex;
+}
+
+.card {
+  width : 300px;
+  height : 200px;
+  margin : auto;
+  background-color : #ccc;
+  position : relative;
+  overflow : hidden;
+}
+
+.card:hover .item1 {
+  left : 50%;
+}
+
+.card:hover .item2 {
+  right : 0;
+}
+
+.item1 {
+  position : absolute;
+  background-color : blue;
+  height : 20px;
+  width : 100%;
+  bottom : 0;
+  left : 100%;
+  transition : all .4s linear;
+  cursor: pointer;
+
+}
+.item2 {
+  position : absolute;
+  background-color : red;
+  height : 20px;
+  width : 100%;
+  bottom : 20px;
+  right : 100%;
+  transition : all .4s linear;
+}

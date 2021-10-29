@@ -1,0 +1,503 @@
+/* navbar */
+.header{
+    height: 46px;
+    background-color: var(--back-color);
+    width: 100%;
+    position: fixed;
+    top:0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+.header__navbar{
+   margin:  0 16px;
+    display:flex;
+    justify-content: space-between; 
+    
+}
+
+.header__navbar-list{
+    display: flex;
+    
+}
+
+.header__navbar-item{
+  list-style: none;
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+
+.header__navbar-link:hover{
+    color: var(--back-color);
+    background-color: var(--hover-color);
+}
+
+.header__navbar-link{
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 400;
+    width: 100%;
+    padding: 15px 24px;
+    display: inline-block;
+    
+}
+/* search */
+.header__menu{
+    position: absolute;
+    right: 0;
+    top: 0;
+    
+}
+.header__menu,
+.header__saerch{
+    display: flex;
+    align-items: center;
+}
+
+.header__menu-btn{
+    display: none;
+}
+.header__menu-btn,
+.header__search-btn{
+    padding: 16px 25px;
+    cursor: pointer;
+    outline: none;
+    border: none; 
+    background-color: transparent;  
+}
+
+.header__search-btn:hover{
+    background-color: var(--primary-color);
+}
+
+.header__menu-btn:hover {
+    background-color: var(--hover-color);
+    
+}
+.header__menu-btn:hover .header__menu-icon{
+    color: black;
+    
+}
+
+.header__menu-icon,
+.header__search-btn-icon{
+    font-size: 1.6rem;
+    color: #fff;
+}
+
+/* more notifi*/
+.header__navbar-icon{
+    padding-left: 5px;
+    font-size: 1.5rem;
+    justify-items: center;
+}
+
+.header__navbar-more-list{
+    position: absolute;
+    background-color:var(--text-color);
+    left: 0;
+    width: 150px;
+    z-index: 1;
+    top: 100%;
+    display: none;
+    animation: fadein ease-in 0.3s;
+    box-shadow: 0 0 2px 0 rgb(70, 68, 68);
+}
+.header__navbar-item:hover .header__navbar-more-list{
+    display: block;
+}
+
+.header__navbar-more-item{
+    list-style: none;
+    padding: 7px 22px;
+    
+}
+.header__navbar-more-item:hover{
+    background-color: var(--hover-color);
+}
+
+.header__navbar-more-link{
+    text-decoration: none;
+    font-size: 1.9rem;
+    display: block;
+    color: var(--back-color);
+}
+/* slider */
+.slider{
+    padding-top: 50%;
+    position: relative;
+    margin-top: 46px;
+    background: url('../img/chicago.jpg') top center /  cover no-repeat;
+}
+
+.slider__text{
+    position: absolute;
+    color: #fff;
+    bottom: 40px;
+    width: 100%;
+    text-align: center;
+}
+
+.slider__text-heading{
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+.slider__text-desription{
+    font-size: 1.4rem;
+}
+/* container */
+
+/* container-about */
+.container-about-text{
+     margin: 15px 0;
+     font-size: 1.5rem;
+     text-align: justify;
+     line-height: 2.2rem;
+}
+
+.container-about__nember{
+    padding: 32px 0;
+    overflow: hidden;
+}
+
+.container-about__nember-item{
+   float: left;
+   width: 33.33333%;
+   text-align: center;
+}
+
+.container-about__nember-name{
+    font-size: 1.6rem;
+    margin: 15px 0;
+
+}
+
+.container-about__nember-img{
+    height: 154px;
+    align-items: center;
+    margin-top: 15px;
+    border-radius: 4px;
+}
+/* container-tour */
+.container-tour{
+    background-color: var(--back-color);
+}
+.container-section__heading-black{
+    color: var(--text-color) ;
+}
+.tour-ticket__list{
+    background-color: var(--text-color);
+    border: 1px solid #ccc;
+    margin-top: 40px;
+}
+.tour-ticket__item:last-child{
+    border: none;
+}
+
+.tour-ticket__item{
+    list-style: none;
+    padding: 8px 16px;
+    font-size: 1.5rem;
+    border-bottom: 1px solid #ccc ;
+    
+}
+
+.tour-ticket__item-soldout{
+    background-color: red;
+    padding: 3px 4px;
+    color: var(--text-color);
+    margin-left: 20px;
+}
+
+.tour-ticket__item-hnew{
+    background-color: #000;
+    color: var(--text-color);
+    padding: 3px 8px;
+    text-align: center;
+    border-radius: 48%;
+    float: right;
+    margin-top: -3px;
+}
+/* buy tisker */
+.tour-buytisket{
+    padding: 32px 8px;
+    margin: 0 -16px;
+    overflow: hidden;
+    
+}
+
+.ticker-magin{
+    margin-top: px;
+}
+
+.tour-buytisker__list{  
+    float: left;
+    width: 33.33333%;
+    padding: 0 8px;
+    margin-bottom: 16px;    
+}
+
+.tour-buytisket__img{
+    width: 100%;
+    display: block;
+}
+
+.tour-buytisket__img:hover{
+   opacity: 0.5;
+}
+
+.tour-buytisket__item{
+    background-color: #FFF;
+    padding: 0 16px;
+    font-size: 1.5rem;
+    left: 1.5;
+}
+
+.tour-buytisket__item-heading{
+    font-size: 1.5rem;
+    padding: 15px 0;
+}
+
+.tour-buytisket__item-time{
+    font-size: 1.5rem;
+    color: rgb(145, 143, 143);
+    font-weight: 200;
+    margin-bottom: 15px;
+}
+
+.tour-buytisket__item-desrition{
+    font-size: 1.5rem;
+    font-weight: 200;
+    margin: 15px 0;
+    line-height: 26px;
+}
+/* TISKER form  */
+
+.tisker-form{
+    
+    background-color: var(--text-color);
+    min-height: 480px; 
+    position: relative;
+    box-shadow: 0 4px 10px 0 rgb(0 0 0 / 20%),
+                0 4px 20px 0 rgb(0 0 0 / 19%);
+}
+
+.tisker-form__close{
+    position: absolute;
+    right: 0;
+    font-size: 2rem;
+    font-weight: 100;
+    padding: 8px 16px;
+    line-height: 1.6;
+    color: var(--text-color);
+}
+
+.tisker-form__close:hover{
+    background-color: var(--hover-color);
+    color: var(--back-color);
+}
+
+.tisker-form__heading-icon{
+    margin-right: 5px;
+}
+
+.tisker-form__heading{
+   
+    padding: 46px 16px;
+    background-color: #009688;
+    display: block;
+    text-align: center;
+    font-size: 2.8rem;
+    font-weight: 500;
+    color: var(--text-color);
+}
+
+.tisker-form__group{
+    padding: 0 16px;
+}
+
+.tisker-form__lable{
+    display: block;
+    margin: 10px 0;
+    font-size: 1.5rem;
+    line-height: 3rem;
+}
+
+.tisker-form__lable-icon{
+    
+}
+
+.tisker-form__input{
+    width: 100%;
+    height: 40px;
+    padding: 8px;
+    font-size: 1.3rem;
+}
+
+.tisker-form__btn{
+    padding: 16px;
+    margin: 16px 0;
+    width: 100%;
+    background-color: #009688;
+    color: var(--text-color);
+    font-size: 1.6rem;
+    border: none;
+    cursor: pointer;
+}
+.tisker-form__btn:hover{
+    background-color: #ccc;
+    color: var(--back-color);
+}
+
+.tisker-form__footer{
+    padding: 0 16px;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+   
+}
+
+.tisker-form__footer-btn{
+    text-align: left;
+    font-size: 1.3rem;
+    line-height: 22px;
+    margin: 16px 0;
+    background-color: var(--primary-color);
+    padding: 8px 16px;
+    border: none;
+    color: var(--text-color);
+}
+.tisker-form__footer-btn:hover{
+    background-color: var(--hover-color);
+    color: black;
+}
+
+.tisker-form__footer-lable{
+    margin: 15px 0;
+    text-align: right;
+    font-size: 1.5rem;
+    padding-top: 11px;
+}
+
+.tisker-form__footer-link{
+   color: #009688;
+    list-style: none;
+}
+/* contact */
+.contact-form{
+    width: 100%;
+    padding: 32px 0;
+    overflow: hidden;
+}
+
+.contact-form__column{
+    float: left;
+    margin-bottom: -12px;
+    width: 50%;
+ 
+}
+
+.contact-form__item{
+    font-size: 2rem;
+    padding: 3px 0;
+    line-height: 3rem;
+
+}
+.contact-form__item a{
+    color: lightseagreen;
+}
+.contact-form__item a:hover{
+    color: rgb(125, 240, 248);
+}
+
+.contact-form__item-icon{
+    margin-right: 5px;
+    height: 25px;
+    width: 20px;
+}
+
+.contact-form__input{
+   margin: 0 -8px 8px ;
+}
+.contact-form__input-right{
+    width: 50% ;
+    float: left;
+    padding: 0 8px;
+    
+}
+
+.contact-form__input-name{
+    width: 100%;
+    height: 40px;
+    font-size: 1.5rem;
+    padding: 8px;
+    border: 1px solid rgb(200, 200, 201);
+
+}
+
+.contact-form__input-center{
+    padding: 8px ;
+    margin: 46px -8px 8px -8px;
+
+
+}
+
+.contact-form__column-mess{
+    width: 100%;
+    height: 40px;
+    padding: 16px;
+    border: 1px solid rgb(200, 200, 201);
+    font-size: 1.5rem;
+    
+}
+
+.contact-form__btn{
+    width: 80px !important; 
+    float: right;
+}
+/* map */
+.map-section{
+    width: 100%;
+}
+
+.map-section__img{
+    width: 100%;
+}
+/* footer */
+.footer{
+
+}
+
+.footer-section{
+    padding: 64px 16px;
+    font-size: 2rem;
+    text-align: center;
+}
+.footer-botton__link{
+    color: lightseagreen !important;
+}
+
+.footer-tiem__icon{
+    padding: 10px 2px;
+    font-size: 3rem;
+    color: #666;
+}
+.footer-tiem__icon:hover{
+    color: rgb(221, 218, 218);
+}
+.footer-botton{
+    color: #666;
+}
+.footer-botton a{
+    color: #666;
+
+}
+
+
+
+
+
+

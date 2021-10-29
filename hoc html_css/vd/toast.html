@@ -1,0 +1,33 @@
+<html>
+    <header>
+        <title>demo</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="stlye_msg.css">
+      
+    </header>
+    <!-- tạo mess ap dụng BEM -->
+    <body>
+        <div id="toast">
+            <!-- thành công -->
+            <div class="toast toast--success">
+                <div class="toast__icon">
+                    <i class="fas fa-check-circle" ></i>
+                </div> 
+                <div class="toast__body">
+                    <h3 class="toast__title">thanh công</h3>
+                    <p class="toast__msg"> bạn đã đăng kí thành công</p>
+                </div>
+                <div class="toast__close">
+                    <i class="fas fa-times"></i>
+                </div>
+            </div>
+           
+        </div>
+        <div>
+            <div onclick="showSuccessToast();" class="btn btn--success">Show success toast</div>
+            <div onclick="showErrorToast();" class="btn btn--danger">Show error toast</div>
+          </div>
+          
+    </body>
+</html>

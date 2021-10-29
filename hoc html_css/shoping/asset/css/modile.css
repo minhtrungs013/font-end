@@ -1,0 +1,80 @@
+/* modile */
+
+@media(min-width: 64em ){
+
+}
+@media(max-width: 63.9375em ){
+    .btn{ 
+        width: 116px !important;
+        height: 47px !important;
+    }  
+    .footer-section {
+        padding: 49px 16px;
+    }
+    .footer-tiem__icon{
+        margin: 0 10px;
+        
+    }
+    .footer-botton{
+        padding: 10px 0;
+    }
+}
+@media(max-width: 46.25em ) and (max-width: 63.9375em ){
+    .contact-form__item{
+        margin-top: -5px;
+    }
+}
+@media(max-width: 46.1875em ){
+    .s-full-width{
+        width: 100% !important;
+    }
+     
+    .s-col-16{
+        margin-top: 16px;
+    }
+
+    .header__navbar-list {
+        display: block;
+    }
+    
+    .header__saerch{
+        display: none;
+    }
+    .header__menu-btn{
+        display: block;
+    }
+    .header{
+        overflow: hidden;
+    }
+    .header__navbar-list{
+        display: block;
+    }
+    .header__navbar-more-list{
+        position: initial;
+    }
+    .about__nember-mobile{
+        width: 100%;
+        
+    }
+    .container-about__nember-img{
+        width: 60%;
+        height: 100%;
+    }
+    .contact-form__input{
+        margin: 0;
+    }
+    .contact-form__input-right{
+        margin: 8px 0;
+        padding: 0;
+        width: 100%;
+        float: none;
+    }
+    .contact-form__input-center {
+    margin: -2px -8px 8px;
+    }
+
+
+}
+
+
+

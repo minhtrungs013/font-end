@@ -1,0 +1,16 @@
+.details-form{
+    background-color: rgb(216, 224, 215);
+    min-height: 480px; 
+    position: relative;
+    box-shadow: 0 4px 10px 0 rgb(0 0 0 / 20%),
+                0 4px 20px 0 rgb(0 0 0 / 19%);
+    border-radius: 3px;
+}
+.l-1-13{
+        flex: 0 0 7.692307%;
+        max-width: 7.692307%;
+}
+.wide .l-1-13{
+    flex: 0 0 7.692307%;
+    max-width: 7.692307%;
+}

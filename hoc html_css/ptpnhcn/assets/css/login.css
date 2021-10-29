@@ -1,0 +1,189 @@
+.login{
+    position: relative;
+    height: 740px;
+    background: url('../img/background.fafce5017fe7cbe8ecfc.jpg') center center / cover no-repeat;
+}
+.login__header{
+    position: absolute;
+    width: 746px;
+    height: 373px;
+    min-width: 700px;
+    background: rgba(25,54,70,.45);
+    box-shadow: 0 4px 10px 8px rgb(33 95 123 / 50%);
+    border-radius: 4px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.login__logo{
+    background: url('../img/logo_bo_y_te.0a64d78aa639881340cd.png') ;
+    width: 257px;
+    height: 73px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 20px 20px 20px 10px;
+}
+
+.login__application{
+    bottom: 0;
+    position: absolute;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.login__application-text{
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.login__application-link{
+    width: 100px;
+    height: 33px;
+    border-radius: 3px;
+    font-size: 1.4rem;
+    text-decoration: none;
+    margin-left: 5px;
+    margin-right: 5px;
+    color: #fff!important;
+    border: 2px solid #fff!important;
+    padding: 6px 0 !important;
+    
+    display: inline-block;
+}
+.login__application-link:hover{
+    background-color: #5f9bb7;
+    border: 2px solid #25f70a!important;
+}
+
+.login__form{
+    width: 22vw;
+    min-width: 350px;
+    background-color: #fff;
+    box-shadow: 8px 12px 6px rgb(0 0 0 / 15%);
+    border-radius: 4px;
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    transform: translate(-50%,-50%);
+}
+
+.login__content{
+    padding: 10%;
+}
+
+.login__content-logo{
+    background: url('../img/logo_hssk_2.677f8378d1d6fa97835a.png');
+    width: 128px;
+    height: 38px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 0 auto;
+}
+
+.login__content-heading{
+    font-size: 24px!important;
+    text-align: center;
+    margin-bottom: 6vh;
+    margin-top: 3vh;
+}
+
+.login__import{
+
+}
+
+.login__import-btn{
+    height: 40px!important;
+    width: 100%;
+    background: #1790c9;
+    border-radius: 50px;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+    font-size: 16px!important;
+    margin-top: 3vh;
+    border: none;
+    cursor: pointer;
+}
+.login__import-btn:hover{
+    background-color: rgb(73, 195, 243);
+}
+
+.login__import-hotline{
+    margin-top: 30px;
+    text-align: center;
+    color: #1790c9;
+}
+
+.login__import-logo{
+    background: url('../img/hotline.6609b8af2cef9f63708a.png');
+    width: 24px;
+    height: 24px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 0 auto;
+}
+
+.login__import-phone{
+    margin-top: 5px;
+    font-size: 1.8rem;
+    line-height: 1.6;
+}
+
+.login__import-desc{
+    text-decoration: none;
+    background-color: transparent;
+    font-size: 1.8rem;
+    line-height: 1.6;
+}
+
+.login__import-desc:hover{
+    color: #f32b2b;
+}
+
+
+
+
+/* trick */
+.form-field{
+    position: relative;
+    width: 100%;
+    padding-bottom: 25px;
+}
+
+.form-input{
+    padding: 20PX;
+    border: 1PX solid rgb(70, 52, 233);
+    border-radius: 4px;
+    height: 40px;
+    width: 100%;
+    padding: 0 20px;
+    transition: .25s ease;
+    font-size: 1.5rem;
+
+}
+.form-input:focus{
+    border-color: rgb(70, 52, 233);
+}
+
+
+.form-lable{
+    position: absolute;
+    top: 30% ;
+    transform: translateY(-50%);
+    left: 21px;
+    user-select: none;
+    color: rgb(102, 100, 100);
+    pointer-events: none;
+    transition: .25s ease;
+    font-size: 1.5rem;
+}
+.form-input:not(:placeholder-shown) +
+.form-lable,
+.form-input:focus + .form-lable{
+    top: 0;
+    display: inline-block;
+    background-color: white;
+    color: rgb(70, 52, 233);
+}
